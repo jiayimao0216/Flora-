@@ -404,6 +404,7 @@ p {
   overflow: hidden;
   aspect-ratio: 16 / 10;
   background: #dbe7e3;
+  container-type: inline-size;
 }
 
 .dashboard-frame > img {
@@ -412,11 +413,74 @@ p {
   object-fit: cover;
 }
 
+.dashboard-focus-overlay {
+  position: absolute;
+  top: 19%;
+  left: 7.82%;
+  z-index: 1;
+  width: 15.44%;
+  height: 64.6%;
+  padding: 2.3cqw 1.25cqw;
+  overflow: hidden;
+  background: #edf3f3;
+  border-radius: 1.7cqw;
+  color: #17323b;
+}
+
+.dashboard-focus-overlay > strong {
+  display: block;
+  font-size: 1.7cqw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.dashboard-focus-list {
+  display: grid;
+  gap: 2.4cqw;
+  margin-top: 2.4cqw;
+}
+
+.dashboard-focus-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.7cqw;
+  width: 100%;
+  min-width: 0;
+  height: 3.4cqw;
+  padding: 0 0.85cqw;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d5e0e2;
+  border-radius: 0.85cqw;
+  color: #1d3037;
+  font-size: 1cqw;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.dashboard-focus-pill i {
+  flex: 0 0 auto;
+  width: 1.55cqw;
+  height: 1.55cqw;
+  background: var(--focus-color);
+  border-radius: 0.25cqw;
+}
+
+.dashboard-focus-pill b {
+  min-width: 0;
+  overflow: hidden;
+  font: inherit;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
 .dashboard-scan {
   position: absolute;
   top: 6%;
   right: 0;
   left: 0;
+  z-index: 2;
   height: 2px;
   background: var(--mint);
   box-shadow: 0 0 14px rgba(120, 201, 176, 0.9);
@@ -428,6 +492,7 @@ p {
   position: absolute;
   right: 12px;
   bottom: 12px;
+  z-index: 3;
   padding: 0.38rem 0.52rem;
   background: rgba(16, 32, 36, 0.92);
   border: 1px solid rgba(120, 201, 176, 0.7);
