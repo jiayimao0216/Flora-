@@ -49,9 +49,13 @@
           <figure class="hero-visual">
             <div class="visual-topline">
               <span>Portfolio / signal 01</span>
-              <span>Live / UBC MBAN</span>
+              <span class="live-status"><span class="status-square" aria-hidden="true"></span>Live / UBC MBAN</span>
             </div>
-            <img src="assets/img/analytics-dashboard.png" alt="Marketing performance dashboard showing campaign trends, regional comparison, and stakeholder-ready insights.">
+            <div class="dashboard-frame">
+              <img src="assets/img/analytics-dashboard.png" alt="Marketing performance dashboard showing campaign trends, regional comparison, and stakeholder-ready insights.">
+              <span class="dashboard-scan" aria-hidden="true"></span>
+              <span class="dashboard-sync" aria-hidden="true">Data synced</span>
+            </div>
             <figcaption class="visual-caption">
               <span class="portrait-wrap"><img src="assets/img/jiayi-mao.jpg" alt="Portrait of Jiayi Mao"></span>
               <span>
@@ -73,10 +77,79 @@
             <p>My portfolio is grounded in the analyst workflow: prepare reliable data, define the right KPI, surface the pattern, and communicate the decision value.</p>
           </div>
           <div class="metrics-grid" aria-label="Portfolio highlights">
-            <div class="metric"><strong>150K+</strong><span>marketing data rows analyzed</span></div>
-            <div class="metric"><strong>6</strong><span>regional markets reported</span></div>
-            <div class="metric"><strong>30%</strong><span>reporting turnaround improvement</span></div>
-            <div class="metric"><strong>12</strong><span>workforce KPIs defined</span></div>
+            <div class="metric"><strong data-counter data-target="150" data-suffix="K+">150K+</strong><span>marketing data rows analyzed</span></div>
+            <div class="metric"><strong data-counter data-target="6">6</strong><span>regional markets reported</span></div>
+            <div class="metric"><strong data-counter data-target="30" data-suffix="%">30%</strong><span>reporting turnaround improvement</span></div>
+            <div class="metric"><strong data-counter data-target="12">12</strong><span>workforce KPIs defined</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section motion-section" aria-labelledby="motion-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Analytics in motion / 01-03</p>
+              <h2 id="motion-title">A live view of how data becomes direction.</h2>
+            </div>
+            <p>Reliable decisions move through a clear sequence: validate the records, track the right signal, and translate the pattern into action.</p>
+          </div>
+
+          <div class="motion-grid">
+            <article class="motion-card">
+              <div class="motion-stage quality-stage" aria-hidden="true">
+                <div class="stage-label"><span>INPUT / 150K ROWS</span><span>QA RUN</span></div>
+                <div class="quality-row" style="--row: 0"><i></i><span></span><span></span><b>PASS</b></div>
+                <div class="quality-row" style="--row: 1"><i></i><span></span><span></span><b>PASS</b></div>
+                <div class="quality-row" style="--row: 2"><i></i><span></span><span></span><b>PASS</b></div>
+                <div class="quality-row" style="--row: 3"><i></i><span></span><span></span><b>PASS</b></div>
+                <div class="quality-progress"><span></span></div>
+              </div>
+              <div class="motion-copy">
+                <span class="card-tag">01 / Data quality</span>
+                <h3>Validate the signal</h3>
+                <p>Source checks, joins, missing values, and field definitions turn raw records into reliable evidence.</p>
+              </div>
+            </article>
+
+            <article class="motion-card">
+              <div class="motion-stage kpi-stage" aria-hidden="true">
+                <div class="stage-label"><span>REGIONAL KPI</span><span>06 MARKETS</span></div>
+                <div class="kpi-chart">
+                  <span class="kpi-bar" style="--bar: 48%; --column: 0"><i></i><small>R1</small></span>
+                  <span class="kpi-bar" style="--bar: 71%; --column: 1"><i></i><small>R2</small></span>
+                  <span class="kpi-bar" style="--bar: 57%; --column: 2"><i></i><small>R3</small></span>
+                  <span class="kpi-bar" style="--bar: 88%; --column: 3"><i></i><small>R4</small></span>
+                  <span class="kpi-bar" style="--bar: 66%; --column: 4"><i></i><small>R5</small></span>
+                  <span class="kpi-bar" style="--bar: 79%; --column: 5"><i></i><small>R6</small></span>
+                </div>
+                <div class="kpi-readout"><span>Reporting cycle</span><strong>-30%</strong></div>
+              </div>
+              <div class="motion-copy">
+                <span class="card-tag">02 / KPI reporting</span>
+                <h3>Make performance visible</h3>
+                <p>Repeatable views surface regional movement and shorten the path from reporting request to answer.</p>
+              </div>
+            </article>
+
+            <article class="motion-card">
+              <div class="motion-stage decision-stage" aria-hidden="true">
+                <div class="stage-label"><span>DECISION PATH</span><span>LIVE</span></div>
+                <div class="decision-track">
+                  <div class="decision-node" style="--step: 0"><span>01</span><strong>Pattern</strong></div>
+                  <div class="decision-link"><span></span></div>
+                  <div class="decision-node" style="--step: 1"><span>02</span><strong>Priority</strong></div>
+                  <div class="decision-link"><span></span></div>
+                  <div class="decision-node" style="--step: 2"><span>03</span><strong>Action</strong></div>
+                </div>
+                <div class="decision-readout"><span>Next focus</span><strong>Retention</strong></div>
+              </div>
+              <div class="motion-copy">
+                <span class="card-tag">03 / Decision support</span>
+                <h3>Move from pattern to action</h3>
+                <p>Concise findings connect a measurable change to a business priority, an owner, and a next step.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
